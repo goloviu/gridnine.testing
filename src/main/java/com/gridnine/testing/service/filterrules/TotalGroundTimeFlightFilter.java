@@ -17,7 +17,7 @@ public class TotalGroundTimeFlightFilter implements FlightFilter {
         List<Segment> segments = flight.getSegments();
 
         if (segments.size() <= 1) {
-            return false;
+            return true;
         }
 
         for (int i = 0; i < (segments.size() - 1); i++) {
